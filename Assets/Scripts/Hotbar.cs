@@ -15,7 +15,7 @@ public class Hotbar : MonoBehaviour
 
     void Update()
     {
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 5; i++)
         {
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))
             {
@@ -28,7 +28,7 @@ public class Hotbar : MonoBehaviour
     {
         selectedIndex = index;
 
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 5; i++)
         { 
             slots[i].color = (i == index) ? SelectedColor : NormalColor;
         }
